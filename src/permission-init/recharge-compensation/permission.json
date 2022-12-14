@@ -1,0 +1,400 @@
+{
+  "cs": [
+    {
+      "id": 12,
+      "username": "Travis",
+      "mobile": "13611655254",
+      "email": "travis.chou@phemex.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 2,
+          "name": "cs member",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 8,
+          "name": "ban user",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 13,
+          "name": "CS_Deposit_Withdraw",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 59,
+          "name": "P2P Management",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 73,
+          "name": "P2P_Order_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 42,
+          "name": "Deposit_And_Withdrawal",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 43,
+          "name": "Withdrawal_Request",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 101,
+          "name": "User_Recharge_Compensation_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 77,
+          "name": "Airdrop_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1580787271000,
+      "updatedAt": 1656622184000
+    },
+    {
+      "id": 82,
+      "username": "aaron",
+      "mobile": "",
+      "email": "aaron.zhu@phemex.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 2,
+          "name": "cs member",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 8,
+          "name": "ban user",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 13,
+          "name": "CS_Deposit_Withdraw",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 59,
+          "name": "P2P Management",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 73,
+          "name": "P2P_Order_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1615166547000,
+      "updatedAt": 1656374346000
+    },
+    {
+      "id": 22,
+      "username": "Kris",
+      "mobile": "",
+      "email": "krystof.sedlon@phemex.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 2,
+          "name": "cs member",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 8,
+          "name": "ban user",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 13,
+          "name": "CS_Deposit_Withdraw",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 59,
+          "name": "P2P Management",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 73,
+          "name": "P2P_Order_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1585273239000,
+      "updatedAt": 1656039724000
+    },
+    {
+      "id": 126,
+      "username": "yumi.jiang",
+      "mobile": "",
+      "email": "yumi.jiang@phemex.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 2,
+          "name": "cs member",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 8,
+          "name": "ban user",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 13,
+          "name": "CS_Deposit_Withdraw",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 59,
+          "name": "P2P Management",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 73,
+          "name": "P2P_Order_List",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1628464667000,
+      "updatedAt": 1656014682000
+    },
+    {
+      "id": 64,
+      "username": "sam",
+      "mobile": "",
+      "email": "sam.cheng@phemex.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 2,
+          "name": "cs member",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 8,
+          "name": "ban user",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 13,
+          "name": "CS_Deposit_Withdraw",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 21,
+          "name": "cs big client",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 79,
+          "name": "p2p-cs",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1608181760000,
+      "updatedAt": 1655349650000
+    }
+  ],
+  "tech": [],
+  "op": [
+    {
+      "id": 8,
+      "username": "jackie.ma",
+      "mobile": "15121013201",
+      "email": "jackie.ma@cmexpro.com",
+      "status": 1,
+      "roleInfoList": [
+        {
+          "id": 1,
+          "name": "Super Admin",
+          "parentId": null,
+          "parentName": null,
+          "remark": null,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "enable2faKey": true,
+      "google2faSecret": "",
+      "createdAt": 1580777856000,
+      "updatedAt": 1580780207000
+    }
+  ]
+}

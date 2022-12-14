@@ -1,0 +1,16 @@
+{
+  "printWidth": 120,
+  "singleQuote": true,
+  "bracketSpacing": false,
+  "arrowParens": "always",
+  "trailingComma": "es5",
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "antd",
+    "^@ant-design",
+    "^@/common/(?!(components|widgets|hooks|stream)).*$",
+    "^@/common/(const|utils|hooks|decorators|model|stream|widgets|components)(.*)$",
+    "^@/(.*)$",
+    "^[./]"
+  ]
+}
