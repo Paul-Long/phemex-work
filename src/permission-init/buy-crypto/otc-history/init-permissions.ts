@@ -2,10 +2,10 @@ import {apis} from '../../utils';
 
 const permissions = [
   {
-    permissionKey: 'VIP_WITHDRAWAL_WHITELIST',
-    remark: 'Deposit_And_Withdrawal',
-    name: 'VIP Withdrawal Whitelist',
-    resourceKeyList: ['DEPOSIT_WITHDRAWAL', 'DEPOSIT_WITHDRAWAL.VIP_WITHDRAWAL_WHITELIST'],
+    permissionKey: 'BUY_CRYPTO.OTC_HISTORY',
+    remark: 'Buy_Crypto',
+    name: 'OTC_History',
+    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.OTC_HISTORY'],
   },
 ];
 

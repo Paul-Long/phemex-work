@@ -1,5 +1,6 @@
-import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
+import {resolve} from 'path';
+import {defineConfig} from 'vite';
 import {AntdResolve, createStyleImportPlugin} from 'vite-plugin-style-import';
 
 // const target = 'https://a.5810a957f4121923619d86408a6e07d2.me:444/';
@@ -20,6 +21,9 @@ export default defineConfig({
         javascriptEnabled: true,
       },
     },
+  },
+  resolve: {
+    alias: [{find: '@', replacement: resolve(__dirname, 'src')}],
   },
   server: {
     proxy: {

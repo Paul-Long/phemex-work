@@ -1,16 +1,16 @@
 import {apis} from '../../utils';
 
-const parentKey = 'DEPOSIT_WITHDRAWAL';
+const parentKey = 'BUY_CRYPTO';
 
 const resources = [
   {
     namespace: 1,
     type: 2,
-    resourceKey: 'DEPOSIT_WITHDRAWAL.VIP_WITHDRAWAL_WHITELIST',
-    name: 'VIP Withdrawal Whitelist',
-    content: '/home/deposit-withdrawal/vip-withdrawal-whitelist',
+    resourceKey: 'BUY_CRYPTO.USER_CARDS_MANAGEMENT',
+    name: 'User Cards Management',
+    content: '/home/buy-crypto/user-cards-management',
     api: '',
-    sortNum: 21,
+    sortNum: 5,
     isRoute: 1,
   },
 ];

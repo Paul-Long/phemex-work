@@ -1,12 +1,12 @@
 import {apis} from '../../utils';
 
-const parentKey = 'Deposit_And_Withdrawal';
+const parentKey = 'Buy_Crypto';
 
 const roles = [
   {
-    name: 'VIP Withdrawal Whitelist',
-    remark: 'Deposit_And_Withdrawal',
-    permission: ['VIP_WITHDRAWAL_WHITELIST'],
+    name: 'Credit/Debit_Card_Orders',
+    remark: 'Buy_Crypto',
+    permission: ['BUY_CRYPTO.CREDIT_DEBIT_CARD_ORDERS'],
   },
 ];
 

@@ -1,6 +1,7 @@
 import {apis} from '../utils';
 
-const resourceKey = 'TR.ASSETS_MANAGEMENT.WITHDRAWAL_REQUEST';
+// const resourceKey = 'TR.ASSETS_MANAGEMENT.WITHDRAWAL_REQUEST';
+const resourceKey = 'THIRD_PARTY_MANAGEMENT.THIRD_PARTY_FIAT_DEPOSIT';
 
 export async function handleLoadPermissions() {
   const perAll = await apis.queryPermission();

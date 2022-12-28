@@ -16,19 +16,19 @@
 
 ## Admin API
 
-| API Name                 | Y-API                                                  | Developer | Status   |
-| ------------------------ | ------------------------------------------------------ | --------- | -------- |
-| MarginTrade 配置查询     | http://yapi.cmexpro.com/project/314/interface/api/9182 | Fisher    | 联调完成 |
-| MarginTrade 配置更新     | http://yapi.cmexpro.com/project/314/interface/api/9191 | Fisher    | 联调完成 |
-| MarginTrade 配置详情     | http://yapi.cmexpro.com/project/314/interface/api/9614 | Fisher    | 联调完成 |
-| MarginTrade 额度调整详情 | http://yapi.cmexpro.com/project/314/interface/api/9821 | Fisher    | 联调完成 |
-| MarginTrade 额度调整     | http://yapi.cmexpro.com/project/314/interface/api/9830 | Fisher    | 联调完成 |
-| 用户解封                 | /phemex-admin/admin/users/v2/unban                     | Farmer    | 联调完成 |
-| 用户封禁                 | /phemex-admin/admin/users/v2/ban                       | Farmer    | 联调完成 |
-| 用户封禁审批&历史        | /phemex-admin/admin/users/ban-requests                 | Farmer    | 联调完成 |
-| 杠杆保证金基金           |                                                        | Fisher    | 联调完成 |
-| 用户 Order History       |                                                        | Erick     |          |
-| 用户 Trade History       |                                                        | Erick     |          |
-| 用户 Borrow History      |                                                        | Erick     |          |
-| 用户 Repay History       |                                                        | Erick     |          |
-| 用户 Interest History    |                                                        | Erick     |          |
+| API Name                 | Y-API                                                      | Developer | Status   |
+| ------------------------ | ---------------------------------------------------------- | --------- | -------- |
+| MarginTrade 配置查询     | http://yapi.cmexpro.com/project/314/interface/api/9182     | Fisher    | 联调完成 |
+| MarginTrade 配置更新     | http://yapi.cmexpro.com/project/314/interface/api/9191     | Fisher    | 联调完成 |
+| MarginTrade 配置详情     | http://yapi.cmexpro.com/project/314/interface/api/9614     | Fisher    | 联调完成 |
+| MarginTrade 额度调整详情 | http://yapi.cmexpro.com/project/314/interface/api/9821     | Fisher    | 联调完成 |
+| MarginTrade 额度调整     | http://yapi.cmexpro.com/project/314/interface/api/9830     | Fisher    | 联调完成 |
+| 用户解封                 | /phemex-admin/admin/users/v2/unban                         | Farmer    | 联调完成 |
+| 用户封禁                 | /phemex-admin/admin/users/v2/ban                           | Farmer    | 联调完成 |
+| 用户封禁审批&历史        | /phemex-admin/admin/users/ban-requests                     | Farmer    | 联调完成 |
+| 杠杆保证金基金           |                                                            | Fisher    | 联调完成 |
+| 用户 Order History       | http://yapi.cmexpro.com/project/306/interface/api/cat_2293 | Yabo      |          |
+| 用户 Trade History       |                                                            | Yabo      |          |
+| 用户 Borrow History      |                                                            | Yabo      |          |
+| 用户 Repay History       |                                                            | Yabo      |          |
+| 用户 Interest History    |                                                            | Yabo      |          |
