@@ -4,9 +4,9 @@ const parentKey = 'Buy_Crypto';
 
 const roles = [
   {
-    name: 'Buy Crypto Announcement',
+    name: 'Buy Crypto-Banner Configure',
     remark: 'Buy_Crypto',
-    permission: ['BUY_CRYPTO.ANNOUNCEMENT'],
+    permission: ['BUY_CRYPTO.BANNER_CONFIGURE'],
   },
 ];
 

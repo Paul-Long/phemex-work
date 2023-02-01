@@ -2,10 +2,10 @@ import {apis} from '../../utils';
 
 const permissions = [
   {
-    permissionKey: 'BUY_CRYPTO.THIRD_PARTY_FIAT_DEPOSIT',
+    permissionKey: 'BUY_CRYPTO.THIRD_PARTY_ORDERS',
     remark: 'Buy_Crypto',
-    name: 'Third_Party_Fiat_Deposit',
-    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.THIRD_PARTY_FIAT_DEPOSIT'],
+    name: 'Third_Party_Orders',
+    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.THIRD_PARTY_ORDERS'],
   },
 ];
 

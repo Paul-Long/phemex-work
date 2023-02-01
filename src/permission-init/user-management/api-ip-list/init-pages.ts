@@ -1,16 +1,16 @@
 import {apis} from '../../utils';
 
-const parentKey = 'BUY_CRYPTO';
+const parentKey = 'USER_MANAGEMENT';
 
 const resources = [
   {
     namespace: 1,
     type: 2,
-    resourceKey: 'BUY_CRYPTO.BANNER_CONFIGURE',
-    name: 'Banner Configure',
-    content: '/home/buy-crypto/banner-configure',
+    resourceKey: 'USER_MANAGEMENT.API_IP_LIST',
+    name: 'API IP List',
+    content: '/home/user-manage/api-ip-list',
     api: '',
-    sortNum: 6,
+    sortNum: 22,
     isRoute: 1,
   },
 ];

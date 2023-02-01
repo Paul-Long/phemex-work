@@ -1,12 +1,12 @@
 import {apis} from '../../utils';
 
-const parentKey = 'Buy_Crypto';
+const parentKey = 'User_Management';
 
 const roles = [
   {
-    name: 'Third_Party_Orders',
-    remark: 'Buy_Crypto',
-    permission: ['BUY_CRYPTO.THIRD_PARTY_ORDERS'],
+    name: 'Api_IP_List',
+    remark: 'User Management',
+    permission: ['API_IP_LIST'],
   },
 ];
 

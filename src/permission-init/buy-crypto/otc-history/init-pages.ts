@@ -6,9 +6,9 @@ const resources = [
   {
     namespace: 1,
     type: 2,
-    resourceKey: 'BUY_CRYPTO.OTC_HISTORY',
-    name: 'OTC History',
-    content: '/home/buy-crypto/otc-history',
+    resourceKey: 'BUY_CRYPTO.OTC_LEGEND_TRADING_ORDERS',
+    name: 'OTC-Legend Trading Orders',
+    content: '/home/buy-crypto/otc-legend-trading-orders',
     api: '',
     sortNum: 2,
     isRoute: 1,

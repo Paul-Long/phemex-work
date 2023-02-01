@@ -6,9 +6,9 @@ const resources = [
   {
     namespace: 1,
     type: 2,
-    resourceKey: 'BUY_CRYPTO.THIRD_PARTY_FIAT_DEPOSIT',
-    name: 'Third Party Fiat Deposit',
-    content: '/home/buy-crypto/third-party-fiat-deposit',
+    resourceKey: 'BUY_CRYPTO.THIRD_PARTY_ORDERS',
+    name: 'Third Party Orders',
+    content: '/home/buy-crypto/third-party-orders',
     api: '',
     sortNum: 3,
     isRoute: 1,

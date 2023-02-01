@@ -2,10 +2,10 @@ import {apis} from '../../utils';
 
 const permissions = [
   {
-    permissionKey: 'BUY_CRYPTO.ANNOUNCEMENT',
+    permissionKey: 'BUY_CRYPTO.BANNER_CONFIGURE',
     remark: 'Buy_Crypto',
-    name: 'Announcement',
-    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.ANNOUNCEMENT'],
+    name: 'Banner_Configure',
+    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.BANNER_CONFIGURE'],
   },
 ];
 

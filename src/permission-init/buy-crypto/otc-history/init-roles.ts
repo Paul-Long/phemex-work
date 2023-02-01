@@ -4,9 +4,9 @@ const parentKey = 'Buy_Crypto';
 
 const roles = [
   {
-    name: 'OTC_History',
+    name: 'OTC-Legend_Trading_Orders',
     remark: 'Buy_Crypto',
-    permission: ['BUY_CRYPTO.OTC_HISTORY'],
+    permission: ['BUY_CRYPTO.OTC_LEGEND_TRADING_ORDERS'],
   },
 ];
 

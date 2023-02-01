@@ -2,10 +2,10 @@ import {apis} from '../../utils';
 
 const permissions = [
   {
-    permissionKey: 'BUY_CRYPTO.OTC_LEGEND_TRADING_ORDERS',
-    remark: 'Buy_Crypto',
-    name: 'OTC-Legend_Trading_Orders',
-    resourceKeyList: ['BUY_CRYPTO', 'BUY_CRYPTO.OTC_LEGEND_TRADING_ORDERS'],
+    permissionKey: 'API_IP_LIST',
+    remark: 'User_Management',
+    name: 'Api_IP_List',
+    resourceKeyList: ['USER_MANAGEMENT', 'USER_MANAGEMENT.API_IP_LIST'],
   },
 ];
 
