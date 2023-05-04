@@ -1,64 +1,24 @@
 import React from 'react';
-import {Button, Row, Form, Input, Table, Space, Divider} from 'antd';
-import {useForm} from './check-resource';
+import {CheckResource} from '@/permission-init/check-permission/check-resource';
+import {UpdateRole} from '@/permission-init/check-permission/update-role';
+import {PageLayout} from '@/permission-init/components/PageLayout';
 
 export function CheckPermission() {
-  const {loading, record, handleFinish} = useForm();
-
-  return (
-    <>
-      <Divider plain orientation="left">
-        Check Permission
-      </Divider>
-      <Form onFinish={handleFinish} layout="horizontal">
-        <Space align="center">
-          <Form.Item label="Resource Key" name="resource">
-            <Input style={{width: 500}} />
-          </Form.Item>
-          <Form.Item>
-            <Button htmlType="submit" loading={loading} type="primary">
-              Submit
-            </Button>
-          </Form.Item>
-        </Space>
-      </Form>
-      <Table bordered columns={columns} dataSource={[record]} />
-    </>
-  );
+  return <PageLayout menus={menus} contents={contents} isElement />;
 }
 
-const columns = [
+const menus = [
   {
-    title: 'Permissions',
-    dataIndex: 'perArr',
-    render(items) {
-      return items?.map((item) => (
-        <span style={{display: 'block'}} key={item}>
-          {item}
-        </span>
-      ));
-    },
-  },
-  {
-    title: 'Roles',
-    dataIndex: 'roleArr',
-    render(items) {
-      return items?.map((item) => (
-        <span style={{display: 'block'}} key={item}>
-          {item}
-        </span>
-      ));
-    },
-  },
-  {
-    title: 'Users',
-    dataIndex: 'accArr',
-    render(items): any {
-      return items?.map(({email}) => (
-        <span style={{display: 'block'}} key={email}>
-          {email}
-        </span>
-      ));
-    },
+    key: 'permission',
+    label: 'Permission',
+    children: [
+      {key: 'check_resource', label: 'Check Permission'},
+      {key: 'update_role', label: 'Update Role'},
+    ],
   },
 ];
+
+const contents: any = {
+  check_resource: <CheckResource />,
+  update_role: <UpdateRole />,
+};

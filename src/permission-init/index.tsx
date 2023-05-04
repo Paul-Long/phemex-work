@@ -1,44 +1,77 @@
-import React from 'react';
-import {Tabs} from 'antd';
-import {BuyCryptoPane} from '@/permission-init/buy-crypto/BuyCryptoPane';
-import {ContentManage} from '@/permission-init/content-manage';
-import {ContractManage} from '@/permission-init/contract-manage';
-import {MarginTrade} from '@/permission-init/margin-trade';
-import {UserManagement} from '@/permission-init/user-management';
-import {WithdrawalRequest} from '@/permission-init/withdrawal-request';
-import {Login} from './Login';
-import {CheckPermission} from './check-permission';
+import React, {useEffect, useState} from 'react';
+import {Link, Outlet, useLocation, useNavigate} from 'react-router-dom';
+import {Layout, Button, Drawer} from 'antd';
+import {LoginOutlined} from '@ant-design/icons';
+import {Login} from './login/Login';
 
 export function InitPermission() {
+  const location = useLocation();
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      navigate('/admin');
+    }
+  }, []);
+  const showDrawer = () => setOpen(true);
+  const onClose = () => setOpen(false);
+
   return (
-    <Tabs defaultActiveKey="Login" tabPosition="left" style={{height: '100%'}}>
-      <Tabs.TabPane tab="Login" key="Login">
-        <Login />
-      </Tabs.TabPane>
-      <Tabs.TabPane tab="Init Permission" key="Init Permission">
-        <ContentManage />
-
-        <ContractManage />
-
-        <MarginTrade />
-
-        <WithdrawalRequest />
-
-        <UserManagement />
-
-        <BuyCryptoPane />
-      </Tabs.TabPane>
-      <Tabs.TabPane tab="Check Permission" key="Check Permission">
-        <CheckPermission />
-      </Tabs.TabPane>
-    </Tabs>
+    <Layout style={{width: '100%', height: '100%'}}>
+      <Layout.Header
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          background: 'white',
+          padding: 0,
+          height: 40,
+          lineHeight: '38px',
+          borderBottom: '1px solid #e8e8e8',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '0 20px',
+            width: '100%',
+          }}
+        >
+          <div style={{display: 'flex', flexDirection: 'row'}}>
+            {links.map((link) => (
+              <Link
+                to={link.to}
+                relative="path"
+                style={{
+                  textAlign: 'center',
+                  padding: '0 10px',
+                  color: location.pathname === link.to ? '#1890ff' : 'black',
+                  borderBottom: location.pathname === link.to ? '2px solid #1890ff' : 'none',
+                }}
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
+          <Button type="primary" shape="circle" onClick={showDrawer} icon={<LoginOutlined />} />
+          <Drawer title="Login" placement="right" onClose={onClose} open={open}>
+            <Login />
+          </Drawer>
+        </div>
+      </Layout.Header>
+      <Layout.Content style={{padding: 6}}>
+        <Outlet />
+      </Layout.Content>
+    </Layout>
   );
 }
 
-function Item({title, children}) {
-  return (
-    <Tabs.TabPane tab={title} key={title}>
-      {children}
-    </Tabs.TabPane>
-  );
-}
+const links = [
+  {to: '/admin', text: 'Phemex Admin'},
+  {to: '/tech-science', text: 'Tech Science'},
+  {to: '/check-permission', text: 'Check Permission'},
+  {to: '/tools', text: 'Tools'},
+];

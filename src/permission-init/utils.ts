@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {message} from 'antd';
 
 const url = {
   login: '/phemex-admin/phemex-entitlement/login',
@@ -13,6 +14,8 @@ const url = {
   savePhpPermissions: '/phemex-admin/root/x_admin/account-save',
   loadResourceByPermission: '/phemex-admin/phemex-entitlement/admin/permission/listPermissionSpecs',
   getPermissionByRole: '/phemex-admin/phemex-entitlement/admin/permission/getPermissionByRole',
+  updateFile: '/phemex-admin/phemex-admin/admin/upload/image',
+  userEdit: '/phemex-admin/phemex-entitlement/admin/user/edit'
 };
 
 export const apis = {
@@ -28,15 +31,19 @@ export const apis = {
   loadResourceByPermission,
   getPermissionByRole,
   savePhpPermissions,
+  uploadFile,
+  userEdit
 };
 
 async function login(params) {
-  const {data} = await request(url.login, {
+  const res = await request(url.login, {
     method: 'POST',
     body: params,
   });
+  const {data, code} = res;
   const state = {token: data.token, userId: data.adminId, isLogin: true, userName: data.username};
   localStorage.setItem('phemex-admin', JSON.stringify(state));
+  return res
 }
 
 async function queryAccount() {
@@ -52,15 +59,35 @@ async function queryPermission() {
 }
 
 async function addRole(body) {
-  return await request(url.addRole, {method: 'POST', body});
+  const res = await request(url.addRole, {method: 'POST', body});
+  if (res?.data) {
+    message.success('Add role success');
+  }
+  return res;
+}
+
+async function userEdit(body) {
+  const res = await request(url.userEdit, {method: 'POST', body});
+  if (res?.data) {
+    message.success('User edit success');
+  }
+  return res;
 }
 
 async function addResource(body) {
-  return await request(url.addResource, {method: 'POST', body});
+  const res = await request(url.addResource, {method: 'POST', body});
+  if (res?.data) {
+    message.success('Add resource success');
+  }
+  return res;
 }
 
 async function addPermission(body) {
-  return await request(url.addPermission, {method: 'POST', body});
+  const res = await request(url.addPermission, {method: 'POST', body});
+  if (res?.data) {
+    message.success('Add permission success');
+  }
+  return res;
 }
 
 async function queryResource() {
@@ -83,14 +110,20 @@ async function getPermissionByRole(roleId) {
   return await request(url.getPermissionByRole + `?roleId=${roleId}`);
 }
 
+async function uploadFile(options) {
+  return await request(url.updateFile, {method: 'POST',...options})
+}
+
+
 async function request(url, options: any = {}) {
-  const {method = 'GET', body = {}} = options;
+  const {method = 'GET', body = {}, headers = {}} = options;
   const token = localStorage.getItem('token');
   const init: any = {
     headers: {
       'phemex-admin-token': token,
       'admin-namespace': '1',
       'content-type': 'application/json',
+      ...headers
     },
     method,
   };
